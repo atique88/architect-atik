@@ -5,6 +5,13 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+
+/*------------------
+media-width
+------------------*/
+
+
 @media (min-width:576px){.wrapper{max-width:540px
     }}
     
@@ -256,12 +263,13 @@ img {
 
 
 
-/*-------------------
-   Media queries
--------------------*/
+/*------------------------------
+   Media queries and responsive
+-------------------------------*/
 
 @media only screen and (max-width:688px) {
-   nav{
+
+    nav{
     flex-direction: column;
     width: 100%;
     justify-content: center;
@@ -272,9 +280,6 @@ img {
    }
    .column{
     flex-direction: column;
-   }
-   .second-block{
-
    }
    .column-fact{
     grid-template-columns: repeat(1 1fr)
