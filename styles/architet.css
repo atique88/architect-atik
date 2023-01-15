@@ -1,27 +1,14 @@
 * {
     font-family: 'Work Sans', sans-serif;
 }
+body {
+    margin: 0;
+    padding: 0;
+}
 .wrapper{
     margin-right: auto;
     margin-left: auto;
 }
-
-
-/*------------------
-media-width
-------------------*/
-
-
-@media (min-width:576px){.wrapper{max-width:540px
-    }}
-    
-@media (min-width:768px){.wrapper{max-width:720px}}
-
-@media (min-width:992px){.wrapper{max-width:960px}}
-
-@media (min-width:1200px){.wrapper{max-width:1140px}}
-
-@media (min-width:1400px){.wrapper{max-width:1320px}}
 
 /* header and navigation styles */
 header {
@@ -31,6 +18,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .nav-title {
@@ -43,6 +31,8 @@ nav {
 nav ul {
     display: flex;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 nav li {
@@ -58,11 +48,15 @@ nav li {
 
 /* banner styles */
 .banner {
-    margin: 0px 20px;
+    background: rgba(255, 144, 14, 0.1);
 }
 
 img {
     max-width: 100%;
+}
+
+.image-banner {
+    margin-bottom: 45px;
 }
 
 .banner-title {
@@ -70,12 +64,14 @@ img {
     font-weight: 700;
     font-size: 64px;
     color: #131313;
+    margin-top: 0;
+    padding-top: 60px;
 }
 
 .banner-info {
-    text-align: center;
     font-weight: 400;
     font-size: 16px;
+    line-height: 28px;
     color: #727272;
 }
 
@@ -86,6 +82,8 @@ img {
     border-radius: 8px;
     background-color: darkorange;
     color: #FFFFFF;
+    border: 0 none;
+    margin-bottom: 35px;
 }
 
 .second-part img {
@@ -94,8 +92,8 @@ img {
 
 /* second-part images and styles */
 .team-work-details {
-    display: flex;
-
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 .column{
     display: grid;
@@ -106,10 +104,7 @@ img {
 .second-part {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    padding-top: 85px;
-    padding-bottom: 130px;
-
+    gap: 25px;
 }
 
 .second-part-info {
@@ -136,13 +131,20 @@ img {
     font-weight: 400;
     font-size: 16px;
     color: #727272;
+    line-height: 28px;
+    margin-bottom: 35px;
 }
 
 /*-----------------
 third-part-styles
 ----------------- */
-.third-section-container-box {
-    display: flex
+.third-section-container-box .first-coloumn {
+    padding-right: 150px;
+}
+
+.third-section-container-box .first-coloumn .third-part-title {
+    border-left: 2px solid darkorange;
+    padding-left: 20px;
 }
 
 .third-part-common {
@@ -150,6 +152,11 @@ third-part-styles
     background: #FFFFFF;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.third-part-common .small-title {
+    margin-top: 0;
 }
 
 .third-part-container {
@@ -170,6 +177,7 @@ third-part-styles
     font-weight: 400;
     font-size: 16px;
     color: #727272;
+    line-height: 28px;
 }
 
 .small-title {
@@ -184,10 +192,32 @@ third-part-styles
     color: #727272;
 }
 
+.experience {
+    background: darkorange;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 70px;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+.experience span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    display: block;
+    width: 100%;
+}
 /* some-facts-section */
 
 .facts-title-container {
-    
+    padding-top: 75px;
 }
 
 .facts-title {
@@ -195,12 +225,15 @@ third-part-styles
     font-weight: 700;
     font-size: 45px;
     color: #131313;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .facts-info {
     font-weight: 400;
     font-size: 16px;
     color: #727272;
+    line-height: 28px;
 }
 
 /* facts-container styles */
@@ -216,6 +249,8 @@ third-part-styles
 .column-fact{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 75px;
+    text-align: center;
 }
 
 img {
@@ -227,6 +262,12 @@ img {
     font-size: 45px;
     color: #424242;
 }
+.facts {
+    padding: 45px;
+}
+.facts p {
+    margin: 0;
+}
 
 .fact-description {
     font-weight: 600;
@@ -237,8 +278,8 @@ img {
 /* our sponsors styles */
 
 .sponsors {
-    padding-top: 180px;
-    padding-bottom: 50px;
+    padding-top: 120px;
+    padding-bottom: 90px;
 }
 
 .sponsor-title {
@@ -251,6 +292,14 @@ img {
     font-weight: 400;
     font-size: 16px;
     color: #727272;
+    line-height: 28px;
+    margin-bottom: 60px;
+}
+
+.logo-coloumn {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 75px;
 }
 
 .copyright {
@@ -259,6 +308,9 @@ img {
     color: #424242;
     background: #FFF4E7;
     border-radius: 8px;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 100px;
 }
 
 
@@ -266,23 +318,67 @@ img {
 /*------------------------------
    Media queries and responsive
 -------------------------------*/
+@media (min-width:576px){
+    .wrapper{max-width:540px
+    }
+}
+    
+@media (min-width:768px){
+    .wrapper{max-width:720px}
+}
+
+@media (min-width:992px){
+    .wrapper{max-width:960px}
+}
+
+@media (min-width:1200px){
+    .wrapper{max-width:1140px}
+}
+
+@media (min-width:1400px){
+    .wrapper{max-width:1320px}
+}
+
+@media only screen and (max-width:992px) {
+    .nav-title {
+        font-size: 28px;
+    }
+    .column {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .column-fact {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .second-part-info {
+        padding-left: 0;
+    }
+    .third-section-container-box .first-coloumn {
+        padding-right: 0;
+    }
+    .second-coloumn {
+        padding-left: 90px;
+    }
+}
 
 @media only screen and (max-width:688px) {
-
-    nav{
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-   } 
-   ul{
-    flex-direction: column;
-    justify-content: center;
-   }
-   .column{
-    flex-direction: column;
-   }
-   .column-fact{
-    grid-template-columns: repeat(1 1fr)
-
-   }
+    nav {
+        justify-content: center;
+    }
+    nav li {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .banner-title {
+        font-size: 45px;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .column-fact{
+        gap: 30px
+    }
+    .logo-coloumn {
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
